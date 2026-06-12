@@ -1,0 +1,31 @@
+HOW TO RUN "composer run dev" IN WINDOWS / NON-UNIX OS
+
+Option 1:
+using "composer run dev-n"
+
+Option 2:
+run these command separately in new terminal with same directory
+
+php artisan serve --host=localhost
+php artisan queue:listen --tries=1 --timeout=0
+npm run dev\" --names=server,queue,logs,vite --kill-others
+
+
+--------------------------------------------------------------
+
+HOW TO RUN composer run dev" IN UNIX OS
+
+Option 1:
+using "composer run dev-u"
+
+Option 2:
+run these command separately in new terminal with same directory
+
+php artisan serve --host=localhost
+php artisan queue:listen --tries=1 --timeout=0
+php artisan pail --timeout=0
+npm run dev --names=server,queue,logs,vite --kill-others
+
+--------------------------------------------------------------
+
+pail is a tools for log
